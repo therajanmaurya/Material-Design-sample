@@ -39,12 +39,24 @@ public class viewpager extends Fragment  {
         vp = (ViewPager) layout.findViewById(R.id.viewPager);
         ViewPagerAdapter adapter = new ViewPagerAdapter(getActivity().getSupportFragmentManager());
         vp.setAdapter(adapter);
+        /*
+        *
+        * use  mTabs.setDistributeEvenly(true); Before the mTab.setViewPager(viewpager)
+        *
+        * Because it adjust the number of Tab on visible screen according to Text content.
+        *
+        * */
+        mTabs.setDistributeEvenly(true);
         mTabs.setViewPager(vp);
+
+        mTabs.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
+        mTabs.setSelectedIndicatorColors(getResources().getColor(R.color.colorAccent));
+
         mTabs.setCustomTabColorizer(new SlidingTabLayout.TabColorizer() {
 
             @Override
             public int getIndicatorColor(int position) {
-                return getResources().getColor(R.color.colorPrimaryLight);    //define any color in xml resources and set it here, I have used white
+                return getResources().getColor(R.color.colorAccent);    //define any color in xml resources and set it here, I have used white
             }
 
 
@@ -64,7 +76,7 @@ public class viewpager extends Fragment  {
 
         public Context context;
 
-        String [] title = {"TAB1","TAB2","TAB3","TAB4","TAB5","TAB6","TAB7","TAB8","TAB9","TAB10"};
+        String [] title = {"TAB1","TAB2","TAB3"};
         public ViewPagerAdapter(FragmentManager fm) {
             super(fm);
 
