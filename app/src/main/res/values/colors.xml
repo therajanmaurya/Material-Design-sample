@@ -8,4 +8,10 @@
     <color name="colorPrimaryText">#212121</color>
     <color name="colorSecondaryText">#727272</color>
     <color name="colorDivider">#B6B6B6</color>
+    <color name="pink">#e91e63</color>
+    <color name="pink_pressed">#ec407a</color>
+    <color name="randshabhsgd">#805677fc</color>
+    <color name="half_black">#808080</color>
+
+
 </resources>
