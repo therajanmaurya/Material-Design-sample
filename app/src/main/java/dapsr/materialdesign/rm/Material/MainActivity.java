@@ -52,7 +52,10 @@ public class MainActivity extends ActionBarActivity {
         * */
 
 
+
+
         final FloatingActionButton first = (FloatingActionButton) findViewById(R.id.small1);
+        first.setIcon(R.drawable.ic_abstract);
         first.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -65,6 +68,7 @@ public class MainActivity extends ActionBarActivity {
         });
 
         final FloatingActionButton second = (FloatingActionButton) findViewById(R.id.small2);
+        second.setIcon(R.drawable.ic_action_home);
         second.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

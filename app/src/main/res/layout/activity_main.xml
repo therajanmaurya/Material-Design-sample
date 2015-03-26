@@ -26,6 +26,7 @@
 
     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:fab="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/floatRelative"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -51,16 +52,18 @@
                 fab:fab_colorNormal="@color/colorAccent"
                 fab:fab_colorPressed="@color/colorAccent"
                 fab:fab_size="mini"
-                fab:fab_title="first button"/>
+                android:background="@drawable/card_background_white"
+                fab:fab_title="first"/>
 
             <com.getbase.floatingactionbutton.FloatingActionButton
                 android:id="@+id/small2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:background="@drawable/card_background_white"
                 fab:fab_colorNormal="@color/colorAccent"
                 fab:fab_colorPressed="@color/colorAccent"
                 fab:fab_size="mini"
-                fab:fab_title="Second button"/>
+                fab:fab_title="second"/>
 
         </com.getbase.floatingactionbutton.FloatingActionsMenu>
 
